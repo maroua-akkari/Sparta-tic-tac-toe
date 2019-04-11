@@ -16,9 +16,15 @@ $(function(event) {
       console.log("this box was clicked");
       $(this).html("O").css("color", "black").addClass("O");
     })
+    $(".playerTurn").html("It is O's turn");
   }
 
 
+  $("#reset").on("click", function(){
+    $("td").html(" ").css("color", "white").css("background", "white");
+    console.log("reset");
+    player1;
+  })
 
 
 
